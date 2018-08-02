@@ -1,0 +1,120 @@
+
+/* layout */
+.feed {
+  max-width: 500px;
+  .button.newItem{
+    position: fixed;
+    z-index: 10;
+    top: .5em;
+    right: 1em;
+  }
+}
+
+.feedItem {
+  background: $main;
+  margin-bottom: 1em;
+
+  .infos{
+    padding: 1em;
+  }
+  .quote {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+}
+
+
+
+/* header item */
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+
+  .pictureprofil {
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+  }
+
+  .userName {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+
+    .name {
+      font-weight: bold;
+    }
+    .date{
+      color: $dark;
+    }
+  }
+}
+
+
+
+/* article */
+.feedItem.article {
+  .content{
+    margin: 1em;
+    border: 1px solid $light;
+    border-radius: 5px;
+
+    .content-infos {
+      padding: 1em;
+    }
+    .thumb {
+      height: 250px;
+      overflow: hidden;
+    }
+
+  }
+}
+
+
+/* poll */
+.item-poll .content{
+  padding: 0 1em 1em;
+  .quote {
+    margin-bottom: 0;
+
+  }
+  .nb-answers {
+    margin-top: 0;
+    color: #535353;
+  }
+  .answers {
+
+    .answer-item {
+      border-radius: 5px;
+      border: 1px solid $light;
+      margin-top: .5em;
+      overflow: hidden;
+      .text {
+          padding: 1em 1em .8em;
+      }
+      .percentage {
+        content: " ";
+        background: #356AAB;
+        height: 5px;
+        border-radius: 5px;
+        padding: 0 -1em 0;
+      }
+    }
+  }
+}
+
+
+/* preview */
+.preview {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 4em;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+/* button */

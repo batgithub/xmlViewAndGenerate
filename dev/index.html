@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Feed Pictarine</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body id="body">
+    <main>
+
+      <div class="feed" id="app">
+        <h1>C'est le feed ce soir!!</h1>
+        <button class="button primary newItem" id="showPopup" >New item</button>
+        <div class='preview'>
+        </div>
+      </div>
+
+      <div class="popup" id="popup" style="display:none;">
+
+        <div class="popup-header">
+          <form  name="formTemplate">
+            <div class="cat">
+              <label class="label">Generate</label>
+              <select name="selectTemplate" id="selectTemplate" oninput="templateSelected()">
+                <option value="image" selected>Image</option>
+                <option value="article" >Article</option>
+                <option value="quote">Quote</option>
+                <option value="poll">Poll</option>
+              </select>
+            </div>
+          </form>
+          <div class="">
+            <button class="button secondary" id="copyCode"  data-clipboard-target="#sourceCode">Copy code</button>
+            <button class="button" id="hidePopup">Close</button>
+          </div>
+
+        </div>
+
+        <div class="mirror">
+          <div class="forms">
+
+
+            <div name="fillTemplateImage" class="fillTemplate">
+
+
+            </div>
+
+
+          </div>
+          <div class="render">
+            <pre class="code"><code id="sourceCode" class="xml"></code></pre>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </main>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/clipboard.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/highlight.js"></script>
+    <script type="text/javascript" src="js/feed.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/render.js"></script>
+    <script src="//localhost:35729/livereload.js"></script>
+
+
+  </body>
+
+</html>

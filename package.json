@@ -1,0 +1,27 @@
+{
+  "name": "Base",
+  "version": "1.0.0",
+  "description": "Site starter",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "base",
+    "site",
+    "sass",
+    "livereload"
+  ],
+  "author": "Baptiste Lhopitault",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "*",
+    "load-grunt-tasks": "*"
+  }
+}
