@@ -23,5 +23,8 @@
     "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "*",
     "load-grunt-tasks": "*"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }
